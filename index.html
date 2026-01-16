@@ -1,1 +1,208 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ankieta - Bar z Pierogami WSB Merito Wrocław</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 680px; margin: 30px auto; padding: 0 15px; line-height: 1.5; }
+    h1, h2 { color: #c41e3b; }
+    .section { margin-bottom: 35px; }
+    label { display: block; margin: 12px 0 6px; font-weight: 500; }
+    input[type="text"], input[type="number"], textarea { width: 100%; padding: 9px; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px; }
+    .checkbox-group, .radio-group { margin: 8px 0; }
+    button { margin-top: 30px; padding: 14px 40px; background: #c41e3b; color: white; border: none; border-radius: 6px; font-size: 1.1rem; cursor: pointer; }
+    button:hover { background: #a51830; }
+  </style>
+</head>
+<body>
 
+<h1>Ankieta - Bar z Pierogami przy WSB Merito Wrocław</h1>
+
+<form action="https://formsubmit.co/szogunttv@gmail.com" method="POST">
+
+  <!-- Część I -->
+  <div class="section">
+    <h2>Część I: Informacje podstawowe</h2>
+
+    <label>1. Płeć:</label>
+    <div class="radio-group">
+      <input type="radio" name="plec" value="Kobieta" required> Kobieta<br>
+      <input type="radio" name="plec" value="Mężczyzna"> Mężczyzna<br>
+      <input type="radio" name="plec" value="Inna / Wolę nie odpowiadać"> Inna / Wolę nie odpowiadać
+    </div>
+
+    <label>2. Rok studiów:</label>
+    <div class="radio-group">
+      <input type="radio" name="rok" value="I rok" required> I rok<br>
+      <input type="radio" name="rok" value="II rok"> II rok<br>
+      <input type="radio" name="rok" value="III rok"> III rok<br>
+      <input type="radio" name="rok" value="IV rok lub wyżej"> IV rok lub wyżej<br>
+      <input type="radio" name="rok" value="Studia podyplomowe"> Studia podyplomowe
+    </div>
+
+    <label>3. Tryb studiów:</label>
+    <div class="radio-group">
+      <input type="radio" name="tryb" value="Stacjonarne" required> Stacjonarne<br>
+      <input type="radio" name="tryb" value="Niestacjonarne"> Niestacjonarne
+    </div>
+  </div>
+
+  <!-- Część II -->
+  <div class="section">
+    <h2>Część II: Zwyczaje żywieniowe</h2>
+
+    <label>4. Jak często jesz obiady/lunch w okolicy uczelni?</label>
+    <div class="radio-group">
+      <input type="radio" name="czestotliwosc" value="Codziennie (5+ razy)" required> Codziennie (5 razy w tygodniu lub więcej)<br>
+      <input type="radio" name="czestotliwosc" value="3-4 razy"> 3-4 razy w tygodniu<br>
+      <input type="radio" name="czestotliwosc" value="1-2 razy"> 1-2 razy w tygodniu<br>
+      <input type="radio" name="czestotliwosc" value="Rzadziej niż raz"> Rzadziej niż raz w tygodniu<br>
+      <input type="radio" name="czestotliwosc" value="Wcale"> Wcale
+    </div>
+
+    <label>5. Ile zazwyczaj wydajesz na jeden posiłek w okolicy uczelni?</label>
+    <div class="radio-group">
+      <input type="radio" name="budzet" value="Do 10 zł" required> Do 10 zł<br>
+      <input type="radio" name="budzet" value="11-15 zł"> 11-15 zł<br>
+      <input type="radio" name="budzet" value="16-20 zł"> 16-20 zł<br>
+      <input type="radio" name="budzet" value="21-25 zł"> 21-25 zł<br>
+      <input type="radio" name="budzet" value="Powyżej 25 zł"> Powyżej 25 zł
+    </div>
+
+    <label>6. Co jest dla Ciebie najważniejsze? (max 3)</label>
+    <div class="checkbox-group">
+      <input type="checkbox" name="priorytety[]" value="Cena"> Cena<br>
+      <input type="checkbox" name="priorytety[]" value="Smak i jakość"> Smak i jakość jedzenia<br>
+      <input type="checkbox" name="priorytety[]" value="Szybkość"> Szybkość obsługi<br>
+      <input type="checkbox" name="priorytety[]" value="Porcje"> Wielkość porcji<br>
+      <input type="checkbox" name="priorytety[]" value="Lokalizacja"> Lokalizacja (bliskość uczelni)<br>
+      <input type="checkbox" name="priorytety[]" value="Atmosfera"> Atmosfera lokalu<br>
+      <input type="checkbox" name="priorytety[]" value="Wynos"> Możliwość zamówienia na wynos<br>
+      <input type="checkbox" name="priorytety[]" value="Zdrowe opcje"> Zdrowe opcje menu
+    </div>
+  </div>
+
+  <!-- Część III -->
+  <div class="section">
+    <h2>Część III: Preferencje dotyczące pierogów</h2>
+
+    <label>7. Czy lubisz pierogi?</label>
+    <div class="radio-group">
+      <input type="radio" name="lubienie" value="Tak, bardzo" required> Tak, bardzo<br>
+      <input type="radio" name="lubienie" value="Tak, lubię"> Tak, lubię<br>
+      <input type="radio" name="lubienie" value="Neutralnie"> Neutralnie<br>
+      <input type="radio" name="lubienie" value="Raczej nie"> Raczej nie<br>
+      <input type="radio" name="lubienie" value="Nie lubię"> Nie lubię
+    </div>
+
+    <label>8. Czy jadłbyś/jadłabyś pierogi w barze przy uczelni?</label>
+    <div class="radio-group">
+      <input type="radio" name="jadlby" value="Zdecydowanie tak" required> Zdecydowanie tak<br>
+      <input type="radio" name="jadlby" value="Raczej tak"> Raczej tak<br>
+      <input type="radio" name="jadlby" value="Może"> Może<br>
+      <input type="radio" name="jadlby" value="Raczej nie"> Raczej nie<br>
+      <input type="radio" name="jadlby" value="Zdecydowanie nie"> Zdecydowanie nie
+    </div>
+
+    <label>9. Jakie rodzaje pierogów Cię interesują? (kilka)</label>
+    <div class="checkbox-group">
+      <input type="checkbox" name="pierogi[]" value="Ruskie"> Ruskie (ziemniaki + ser biały)<br>
+      <input type="checkbox" name="pierogi[]" value="Z mięsem"> Z mięsem<br>
+      <input type="checkbox" name="pierogi[]" value="Szpinak i feta"> Ze szpinakiem i serem feta<br>
+      <input type="checkbox" name="pierogi[]" value="Kapusta i grzyby"> Z kapustą i grzybami<br>
+      <input type="checkbox" name="pierogi[]" value="Leniwe"> Leniwe<br>
+      <input type="checkbox" name="pierogi[]" value="Owocowe"> Z owocami (truskawki, jagody, wiśnie)<br>
+      <input type="checkbox" name="pierogi[]" value="Słodki ser"> Z serem na słodko<br>
+      <input type="checkbox" name="pierogi[]" value="Wegańskie"> Wegańskie (np. z soczewicą)<br>
+      <input type="text" name="pierogi_inne" placeholder="Inne: ...">
+    </div>
+
+    <label>10. Ile za porcję 8 pierogów?</label>
+    <div class="radio-group">
+      <input type="radio" name="cena_8szt" value="10-12 zł" required> 10-12 zł<br>
+      <input type="radio" name="cena_8szt" value="13-15 zł"> 13-15 zł<br>
+      <input type="radio" name="cena_8szt" value="16-18 zł"> 16-18 zł<br>
+      <input type="radio" name="cena_8szt" value="19-21 zł"> 19-21 zł<br>
+      <input type="radio" name="cena_8szt" value="Powyżej 21 zł"> Powyżej 21 zł
+    </div>
+
+    <label>11. Jakie dodatki? (kilka)</label>
+    <div class="checkbox-group">
+      <input type="checkbox" name="dodatki[]" value="Śmietana"> Śmietana<br>
+      <input type="checkbox" name="dodatki[]" value="Skwarki"> Skwarki<br>
+      <input type="checkbox" name="dodatki[]" value="Cebulka"> Cebulka smażona<br>
+      <input type="checkbox" name="dodatki[]" value="Sos pieczarkowy"> Sos pieczarkowy<br>
+      <input type="checkbox" name="dodatki[]" value="Boczek"> Boczek<br>
+      <input type="checkbox" name="dodatki[]" value="Masło"> Masło<br>
+      <input type="text" name="dodatki_inne" placeholder="Inne: ...">
+    </div>
+  </div>
+
+  <!-- Część IV -->
+  <div class="section">
+    <h2>Część IV: Oczekiwania wobec baru</h2>
+
+    <label>12. W jakich godzinach najczęściej?</label>
+    <div class="checkbox-group">
+      <input type="checkbox" name="godziny[]" value="8-10"> 8:00-10:00<br>
+      <input type="checkbox" name="godziny[]" value="10-12"> 10:00-12:00<br>
+      <input type="checkbox" name="godziny[]" value="12-14"> 12:00-14:00<br>
+      <input type="checkbox" name="godziny[]" value="14-16"> 14:00-16:00<br>
+      <input type="checkbox" name="godziny[]" value="16-18"> 16:00-18:00<br>
+      <input type="checkbox" name="godziny[]" value="Po 18"> Po 18:00
+    </div>
+
+    <label>13. Jak długo czekasz na zamówienie?</label>
+    <div class="radio-group">
+      <input type="radio" name="czekanie" value="Do 5 min" required> Do 5 minut<br>
+      <input type="radio" name="czekanie" value="5-10 min"> 5-10 minut<br>
+      <input type="radio" name="czekanie" value="10-15 min"> 10-15 minut<br>
+      <input type="radio" name="czekanie" value="Powyżej 15 min"> Powyżej 15 minut
+    </div>
+
+    <label>14. Karta stałego klienta z promocjami?</label>
+    <div class="radio-group">
+      <input type="radio" name="karta" value="Zdecydowanie tak" required> Tak, zdecydowanie<br>
+      <input type="radio" name="karta" value="Raczej tak"> Raczej tak<br>
+      <input type="radio" name="karta" value="Nie mam zdania"> Nie mam zdania<br>
+      <input type="radio" name="karta" value="Raczej nie"> Raczej nie<br>
+      <input type="radio" name="karta" value="Nie"> Nie
+    </div>
+
+    <label>15. Dodatkowe usługi? (kilka)</label>
+    <div class="checkbox-group">
+      <input type="checkbox" name="uslugi[]" value="Online"> Zamówienie online / przez aplikację<br>
+      <input type="checkbox" name="uslugi[]" value="Dostawa"> Dostawa do uczelni<br>
+      <input type="checkbox" name="uslugi[]" value="Rezerwacja"> Możliwość rezerwacji stolika<br>
+      <input type="checkbox" name="uslugi[]" value="Zestawy"> Zestawy obiadowe (pierogi + napój)<br>
+      <input type="checkbox" name="uslugi[]" value="Wege"> Opcje wegetariańskie / wegańskie<br>
+      <input type="checkbox" name="uslugi[]" value="Catering"> Catering na eventy studenckie<br>
+      <input type="checkbox" name="uslugi[]" value="Żadne"> Żadne z powyższych
+    </div>
+  </div>
+
+  <!-- Część V -->
+  <div class="section">
+    <h2>Część V: Opinia</h2>
+
+    <label>16. Co mogłoby skłonić Cię do częstego odwiedzania baru z pierogami?</label>
+    <textarea name="co_skłonic" rows="4"></textarea>
+
+    <label>17. Jakie obawy lub wątpliwości masz wobec baru z pierogami przy uczelni?</label>
+    <textarea name="obawy" rows="4"></textarea>
+
+    <label>18. Dodatkowe uwagi / sugestie</label>
+    <textarea name="uwagi" rows="4"></textarea>
+  </div>
+
+  <button type="submit">Wyślij ankietę 🥟</button>
+
+</form>
+
+<p style="text-align:center; margin-top:40px; color:#555; font-size:0.9rem;">
+  Dziękujemy! Twoja opinia pomoże stworzyć bar, który spełni oczekiwania studentów WSB Merito.
+</p>
+
+</body>
+</html>
